@@ -15,6 +15,7 @@ If you like to use a docker based development environment.
 
 Start development server:
 ```sh
+docker-compose run web yarn install
 docker-compose up 
 ```
 After a short duration your development server should be available on http://localhost:1234
