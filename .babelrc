@@ -1,0 +1,22 @@
+{
+  "presets": [
+    ["env", {
+      "targets": {
+        "browsers": ["last 2 versions"]
+      },
+      "debug": true
+    }],
+    "react"
+  ],
+  "plugins": [
+    [
+      "import", {
+        "libraryName": "antd",
+        "libraryDirectory": "es",
+        "style": false
+      }
+    ], [
+      "transform-class-properties"
+    ]
+  ]
+}

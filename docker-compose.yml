@@ -1,0 +1,12 @@
+version: '2'
+services:
+  web:
+    build: .
+    command: yarn start
+    ports:
+     - "1234:1234"
+     - "49359:49359"
+    volumes:
+    - .:/code
+    environment:
+    - CHOKIDAR_USEPOLLING=1
