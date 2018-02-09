@@ -1,23 +1,32 @@
 {
   "presets": [
-    ["env", {
-      "targets": {
-        "browsers": ["last 2 versions"]
-      },
-      "debug": true
-    }],
+    [
+      "env",
+      {
+        "targets": {
+          "browsers": ["last 2 versions"]
+        },
+        "debug": true
+      }
+    ],
     "react"
   ],
   "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./src"]
+      }
+    ],
     ["react-hot-loader/babel"],
     [
-      "import", {
+      "import",
+      {
         "libraryName": "antd",
         "libraryDirectory": "es",
         "style": false
       }
-    ], [
-      "transform-class-properties"
-    ]
+    ],
+    ["transform-class-properties"]
   ]
 }

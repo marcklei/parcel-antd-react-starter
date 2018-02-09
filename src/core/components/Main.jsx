@@ -1,5 +1,7 @@
 import React from "react";
-import { Layout, Menu, Breadcrumb, Icon } from "antd";
+import { Divider, Layout, Menu, Breadcrumb, Icon } from "antd";
+import NotificationsExample from "examples/components/Notifications";
+import FormsExample from "examples/components/Forms";
 
 export default class SiderDemo extends React.Component {
   state = {
@@ -9,7 +11,7 @@ export default class SiderDemo extends React.Component {
     console.log(collapsed);
     this.setState({ collapsed });
   };
-  
+
   render() {
     return (
       <Layout style={{ minHeight: "100vh" }}>
@@ -67,7 +69,9 @@ export default class SiderDemo extends React.Component {
               <Breadcrumb.Item>Bill</Breadcrumb.Item>
             </Breadcrumb>
             <div style={{ padding: 24, background: "#fff", minHeight: 360 }}>
-              Bill is a cat.
+              <NotificationsExample />
+              <Divider />
+              <FormsExample />
             </div>
           </Layout.Content>
           <Layout.Footer style={{ textAlign: "center" }}>
