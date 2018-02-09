@@ -1,27 +1,28 @@
-import React from "react";
-import { Divider, Layout, Menu, Breadcrumb, Icon } from "antd";
-import NotificationsExample from "examples/components/Notifications";
-import FormsExample from "examples/components/Forms";
+import React from 'react';
+import { Divider, Layout, Menu, Breadcrumb, Icon } from 'antd';
+import NotificationsExample from 'examples/components/Notifications';
+import FormsExample from 'examples/components/Forms';
 
 export default class SiderDemo extends React.Component {
   state = {
-    collapsed: false
+    collapsed: false,
   };
-  onCollapse = collapsed => {
+
+  onCollapse = (collapsed) => {
     console.log(collapsed);
     this.setState({ collapsed });
   };
 
   render() {
     return (
-      <Layout style={{ minHeight: "100vh" }}>
+      <Layout style={{ minHeight: '100vh' }}>
         <Layout.Sider
           collapsible
           collapsed={this.state.collapsed}
           onCollapse={this.onCollapse}
         >
           <div className="logo" />
-          <Menu theme="dark" defaultSelectedKeys={["1"]} mode="inline">
+          <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
             <Menu.Item key="1">
               <Icon type="pie-chart" />
               <span>Option 1</span>
@@ -62,19 +63,19 @@ export default class SiderDemo extends React.Component {
           </Menu>
         </Layout.Sider>
         <Layout>
-          <Layout.Header style={{ background: "#fff", padding: 0 }} />
-          <Layout.Content style={{ margin: "0 16px" }}>
-            <Breadcrumb style={{ margin: "16px 0" }}>
+          <Layout.Header style={{ background: '#fff', padding: 0 }} />
+          <Layout.Content style={{ margin: '0 16px' }}>
+            <Breadcrumb style={{ margin: '16px 0' }}>
               <Breadcrumb.Item>User</Breadcrumb.Item>
               <Breadcrumb.Item>Bill</Breadcrumb.Item>
             </Breadcrumb>
-            <div style={{ padding: 24, background: "#fff", minHeight: 360 }}>
+            <div style={{ padding: 24, background: '#fff', minHeight: 360 }}>
               <NotificationsExample />
               <Divider />
               <FormsExample />
             </div>
           </Layout.Content>
-          <Layout.Footer style={{ textAlign: "center" }}>
+          <Layout.Footer style={{ textAlign: 'center' }}>
             Ant Design ©2016 Created by Ant UED
           </Layout.Footer>
         </Layout>
