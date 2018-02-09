@@ -1,3 +1,5 @@
+[![David Dependancy Status](https://david-dm.org/marcklei/parcel-antd-react-starter.svg)](https://david-dm.org/marcklei/parcel-antd-react-starter)
+
 # parcel-antd-react-starter
 
 Simple starter kit for antd-react bundled with parcel.
