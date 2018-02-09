@@ -38,6 +38,16 @@ Build for production:
 yarn build 
 ```
 
+## Try your production build
+One easy way to try your production build is to use `http-server` for example.
+
+1. `yarn global add http-server`
+2. cd into your project directory
+3. `http-server`
+
+Your application production build should be served now on `http://localhost:8080`.
+
+
 ## Package Links
 [Parcel](https://parceljs.org/)  
 [Ant design](https://ant.design/)

@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "parcel index.html --no-cache --hmr-port 49359",
-    "build": "parcel build index.html --out-dir public"
+    "build": "parcel build index.html --out-dir public --public-url ./"
   },
   "dependencies": {
     "antd": "^3.2.0",
