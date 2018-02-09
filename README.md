@@ -39,7 +39,7 @@ yarn build
 ```
 
 ## Try your production build
-One easy way to try your production build is to use `http-server` for example.
+One easy way trying your production build is to use `http-server` for example.
 
 1. `yarn global add http-server`
 2. cd into your project directory
