@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   Form,
   Input,
@@ -7,18 +7,18 @@ import {
   TimePicker,
   Select,
   Cascader,
-  InputNumber
-} from "antd";
+  InputNumber,
+} from 'antd';
 
 const formItemLayout = {
   labelCol: {
     xs: { span: 24 },
-    sm: { span: 5 }
+    sm: { span: 5 },
   },
   wrapperCol: {
     xs: { span: 24 },
-    sm: { span: 12 }
-  }
+    sm: { span: 12 },
+  },
 };
 
 export default class Forms extends React.Component {
@@ -91,7 +91,7 @@ export default class Forms extends React.Component {
             hasFeedback
             validateStatus="success"
           >
-            <DatePicker style={{ width: "100%" }} />
+            <DatePicker style={{ width: '100%' }} />
           </Form.Item>
 
           <Form.Item
@@ -100,7 +100,7 @@ export default class Forms extends React.Component {
             hasFeedback
             validateStatus="warning"
           >
-            <TimePicker style={{ width: "100%" }} />
+            <TimePicker style={{ width: '100%' }} />
           </Form.Item>
 
           <Form.Item
@@ -123,7 +123,7 @@ export default class Forms extends React.Component {
             validateStatus="validating"
             help="The information is being validated..."
           >
-            <Cascader defaultValue={["1"]} options={[]} />
+            <Cascader defaultValue={['1']} options={[]} />
           </Form.Item>
 
           <Form.Item label="inline" {...formItemLayout}>
@@ -138,9 +138,9 @@ export default class Forms extends React.Component {
             <Col span={2}>
               <span
                 style={{
-                  display: "inline-block",
-                  width: "100%",
-                  textAlign: "center"
+                  display: 'inline-block',
+                  width: '100%',
+                  textAlign: 'center',
                 }}
               >
                 -
@@ -159,7 +159,7 @@ export default class Forms extends React.Component {
             hasFeedback
             validateStatus="success"
           >
-            <InputNumber style={{ width: "100%" }} />
+            <InputNumber style={{ width: '100%' }} />
           </Form.Item>
         </Form>
       </React.Fragment>
